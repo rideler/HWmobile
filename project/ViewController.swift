@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  project
 //
-//  Created by Shay Kremer on 13/11/2016.
-//  Copyright © 2016 Shay Kremer. All rights reserved.
+//  Created by Shay Kremer Ron Naor on 13/11/2016.
+//  Copyright © 2016 Shay Kremer Ron Naor. All rights reserved.
 //
 
 import UIKit

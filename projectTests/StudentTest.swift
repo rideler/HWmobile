@@ -2,7 +2,7 @@
 //  StudentTest.swift
 //  project
 //
-//  Created by Shay Kremer on 13/11/2016.
+//  Created by Shay Kremer Ron Naor on 13/11/2016.
 //  Copyright © 2016 Shay Kremer Ron Naor. All rights reserved.
 //
 
@@ -42,6 +42,8 @@ class StudentTest: XCTestCase {
         //using copy CTR
         let st:Student = Student(st: student)
         st.printInfo()
+        
+        XCTAssert(true)
     }
     
     func testPerformanceExample() {

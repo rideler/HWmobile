@@ -2,22 +2,17 @@
 //  StudentsDB.swift
 //  project
 //
-//  Created by Shay Kremer on 13/11/2016.
+//  Created by Shay Kremer Ron Naor on 13/11/2016.
 //  Copyright © 2016 Shay Kremer Ron Naor. All rights reserved.
 //
 
 import Foundation
 
 class StudentsDB {
-    var students : [Student]
+    static let instance = StudentsDB()
+    var students = [Student]()
     
-    init() {
-        students = [Student]()
-    }
-    
-    init(students:[Student]) {
-        self.students = students
-    }
+    private init() {}
     
     func printInfo(){
         if (students.count != 0) {
@@ -37,21 +32,21 @@ class StudentsDB {
         }
     }
     
-    func addStudent(newfN:String, newlN:String,newid:String,newpN:String){
+    func addStudent(newfN:NSString, newlN:NSString,newid:NSString,newpN:NSString){
         if (students.index(where: {$0.id == newid}) == nil){
             let st:Student = Student(fN: newfN, lN: newlN, id: newid, pN: newpN)
             self.students.append(st)
         }
     }
     
-    func addStudent(newfN:String, newlN:String,newid:String){
+    func addStudent(newfN:NSString, newlN:NSString,newid:NSString){
         if (students.index(where: {$0.id == newid}) == nil){
             let st:Student = Student(fN: newfN, lN: newlN, id: newid)
             self.students.append(st)
         }
     }
     
-    func getStudent(sid:String) -> (Student?){
+    func getStudent(sid:NSString) -> (Student?){
         if let found = students.filter({($0.id == sid)}).first {
             return found
         }
@@ -60,7 +55,7 @@ class StudentsDB {
         }
     }
     
-    func deleteStudent(did:String) {
+    func deleteStudent(did:NSString) {
         self.students = students.filter({($0.id != did)})
     }
     

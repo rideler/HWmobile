@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B497AFF1DDDDCEA00F9395B /* MasterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */; };
+		3B497B001DDDDCEA00F9395B /* MasterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */; };
+		3B497B011DDDDCEA00F9395B /* MasterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */; };
+		3B497B031DDDDF0F00F9395B /* PhdStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497B021DDDDF0F00F9395B /* PhdStudent.swift */; };
+		3B497B041DDDDF0F00F9395B /* PhdStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497B021DDDDF0F00F9395B /* PhdStudent.swift */; };
+		3B497B051DDDDF0F00F9395B /* PhdStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497B021DDDDF0F00F9395B /* PhdStudent.swift */; };
+		3B497B071DDDEDDE00F9395B /* PhdStudentTESTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497B061DDDEDDE00F9395B /* PhdStudentTESTs.swift */; };
+		3B497B091DDDEE1400F9395B /* MasterStudentTESTs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497B081DDDEE1400F9395B /* MasterStudentTESTs.swift */; };
 		E0B5F7B81DD8626500635CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B5F7B71DD8626500635CFA /* AppDelegate.swift */; };
 		E0B5F7BA1DD8626500635CFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B5F7B91DD8626500635CFA /* ViewController.swift */; };
 		E0B5F7BD1DD8626500635CFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B5F7BB1DD8626500635CFA /* Main.storyboard */; };
@@ -42,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterStudent.swift; sourceTree = "<group>"; };
+		3B497B021DDDDF0F00F9395B /* PhdStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhdStudent.swift; sourceTree = "<group>"; };
+		3B497B061DDDEDDE00F9395B /* PhdStudentTESTs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhdStudentTESTs.swift; sourceTree = "<group>"; };
+		3B497B081DDDEE1400F9395B /* MasterStudentTESTs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterStudentTESTs.swift; sourceTree = "<group>"; };
 		E0B5F7B41DD8626500635CFA /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B5F7B71DD8626500635CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0B5F7B91DD8626500635CFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +137,8 @@
 				E0B5F7CE1DD8626500635CFA /* Info.plist */,
 				E0B5F7EB1DD867E700635CFA /* StudentTest.swift */,
 				E0B5F7F11DD88F3B00635CFA /* StudentsDBtest.swift */,
+				3B497B061DDDEDDE00F9395B /* PhdStudentTESTs.swift */,
+				3B497B081DDDEE1400F9395B /* MasterStudentTESTs.swift */,
 			);
 			path = projectTests;
 			sourceTree = "<group>";
@@ -153,6 +167,8 @@
 			children = (
 				E0B5F7E71DD8642000635CFA /* Student.swift */,
 				E0B5F7ED1DD8717400635CFA /* StudentsDB.swift */,
+				3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */,
+				3B497B021DDDDF0F00F9395B /* PhdStudent.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -220,8 +236,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "Shay Kremer";
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Shay Kremer Ron Naor";
 				TargetAttributes = {
 					E0B5F7B31DD8626500635CFA = {
 						CreatedOnToolsVersion = 8.0;
@@ -293,7 +309,9 @@
 			files = (
 				E0B5F7BA1DD8626500635CFA /* ViewController.swift in Sources */,
 				E0B5F7E81DD8642000635CFA /* Student.swift in Sources */,
+				3B497AFF1DDDDCEA00F9395B /* MasterStudent.swift in Sources */,
 				E0B5F7B81DD8626500635CFA /* AppDelegate.swift in Sources */,
+				3B497B031DDDDF0F00F9395B /* PhdStudent.swift in Sources */,
 				E0B5F7EE1DD8717400635CFA /* StudentsDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,8 +323,12 @@
 				E0B5F7CD1DD8626500635CFA /* projectTests.swift in Sources */,
 				E0B5F7F21DD88F3B00635CFA /* StudentsDBtest.swift in Sources */,
 				E0B5F7E91DD8642000635CFA /* Student.swift in Sources */,
+				3B497B001DDDDCEA00F9395B /* MasterStudent.swift in Sources */,
 				E0B5F7EC1DD867E700635CFA /* StudentTest.swift in Sources */,
+				3B497B041DDDDF0F00F9395B /* PhdStudent.swift in Sources */,
+				3B497B071DDDEDDE00F9395B /* PhdStudentTESTs.swift in Sources */,
 				E0B5F7EF1DD8717400635CFA /* StudentsDB.swift in Sources */,
+				3B497B091DDDEE1400F9395B /* MasterStudentTESTs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B5F7D81DD8626500635CFA /* projectUITests.swift in Sources */,
+				3B497B011DDDDCEA00F9395B /* MasterStudent.swift in Sources */,
+				3B497B051DDDDF0F00F9395B /* PhdStudent.swift in Sources */,
 				E0B5F7F01DD8717400635CFA /* StudentsDB.swift in Sources */,
 				E0B5F7EA1DD8642000635CFA /* Student.swift in Sources */,
 			);
@@ -373,6 +397,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -423,6 +448,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -545,6 +571,7 @@
 				E0B5F7DE1DD8626500635CFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0B5F7DF1DD8626500635CFA /* Build configuration list for PBXNativeTarget "projectTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +580,7 @@
 				E0B5F7E11DD8626500635CFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0B5F7E21DD8626500635CFA /* Build configuration list for PBXNativeTarget "projectUITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +589,7 @@
 				E0B5F7E41DD8626500635CFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

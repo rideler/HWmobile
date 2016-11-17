@@ -1,15 +1,14 @@
 //
-//  projectTests.swift
-//  projectTests
+//  PhdStudentTESTs.swift
+//  project
 //
-//  Created by Shay Kremer Ron Naor on 13/11/2016.
+//  Created by Shay Kremer on 11/17/16.
 //  Copyright © 2016 Shay Kremer Ron Naor. All rights reserved.
 //
 
 import XCTest
-@testable import project
 
-class projectTests: XCTestCase {
+class PhdStudentTESTs: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,8 +21,17 @@ class projectTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let student:Student = Student(fN:"Yan",lN:"Jhonas",id:"1234",pN:"4321")
+        let master = MasterStudent(st1: student, msc: "computer", thesa: "mobile")
+        let phd = PhdStudent(st2: master, phd: "cyber", thesa: "sql")
+        print("should be YAN,Jhonas,1234,4321,computer,mobile,cyber, sql")
+        phd.printInfo()
+        
+        let phd2 = PhdStudent(copySt: phd)
+        print("should be YAN,Jhonas,1234,4321,computer,mobile,cyber, sql")
+        phd2.printInfo()
+        
+        XCTAssert(true)
     }
     
     func testPerformanceExample() {

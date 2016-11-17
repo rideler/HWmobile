@@ -2,25 +2,26 @@
 //  Student.swift
 //  project
 //
-//  Created by Shay Kremer on 13/11/2016.
+//  Created by Shay Kremer Ron Naor on 13/11/2016.
 //  Copyright © 2016 Shay Kremer Ron Naor. All rights reserved.
 //
 
 import Foundation
 
 class Student{
-    var fName: String
-    var lName: String
-    let id : String
-    var phoneNum : String?
+    var fName: NSString
+    var lName: NSString
+    let id: NSString
+    var phoneNum: NSString?
     
-    init(fN:String, lN:String,id:String) {
+
+    init(fN:NSString, lN:NSString,id:NSString) {
         self.fName = fN
         self.lName = lN
         self.id = id
     }
     
-    init(fN:String, lN:String,id:String,pN:String?) {
+    init(fN:NSString, lN:NSString,id:NSString,pN:NSString?) {
         self.fName = fN
         self.lName = lN
         self.id = id
