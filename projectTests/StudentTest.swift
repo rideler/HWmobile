@@ -20,31 +20,19 @@ class StudentTest: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        //building student
-        var student:Student = Student(fN:"Yan",lN:"Jhonas",id:"1234",pN:"4321")
-        print("before")
-        student.printInfo()
-        //changing the student values
-        student.fName = "Fchange"
-        student.lName = "Lchange"
-        //student.id = "idChange" -not possible because of const
-        student.phoneNum = nil
-        print("after")
-        //should see print of phone number with  message "no phone"
-        student.printInfo()
-        //building student with no phone number
-        student = Student(fN:"1Yan",lN:"1Jhonas",id:"11234")
-        student.printInfo()
-        //adding phone number
-        student.phoneNum = "8888"
-        student.printInfo()
-        //using copy CTR
-        let st:Student = Student(st: student)
-        st.printInfo()
-        
-        XCTAssert(true)
+    func testCtor(){
+        let student1:Student = Student(fN:"Yan",lN:"Jhonas",id:"1234",pN:"4321")
+        student1.printInfo()
+        XCTAssert(student1.fName=="Yan" && student1.lName=="Jhonas" && student1.id=="1234" && student1.phoneNum=="4321")
+        let student2:Student = Student(fN:"Yan",lN:"Jhonas",id:"1234")
+        student2.printInfo()
+        XCTAssert(student2.fName=="Yan" && student2.lName=="Jhonas" && student2.id=="1234" && student2.phoneNum == nil)
+        let student3:Student = Student(st: student2)
+        student3.printInfo()
+        XCTAssert(student3.fName=="Yan" && student3.lName=="Jhonas" && student3.id=="1234" && student3.phoneNum == nil)
     }
+    
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

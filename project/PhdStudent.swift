@@ -11,6 +11,7 @@ import Foundation
 class PhdStudent:  MasterStudent{
     var phdDegree: NSString
     var secThesis: NSString
+    
     init(st2: MasterStudent ,phd: NSString, thesa: NSString) {
         self.phdDegree = phd
         self.secThesis = thesa

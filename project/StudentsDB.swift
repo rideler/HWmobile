@@ -32,20 +32,6 @@ class StudentsDB {
         }
     }
     
-    func addStudent(newfN:NSString, newlN:NSString,newid:NSString,newpN:NSString){
-        if (students.index(where: {$0.id == newid}) == nil){
-            let st:Student = Student(fN: newfN, lN: newlN, id: newid, pN: newpN)
-            self.students.append(st)
-        }
-    }
-    
-    func addStudent(newfN:NSString, newlN:NSString,newid:NSString){
-        if (students.index(where: {$0.id == newid}) == nil){
-            let st:Student = Student(fN: newfN, lN: newlN, id: newid)
-            self.students.append(st)
-        }
-    }
-    
     func getStudent(sid:NSString) -> (Student?){
         if let found = students.filter({($0.id == sid)}).first {
             return found

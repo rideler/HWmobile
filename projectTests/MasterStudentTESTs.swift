@@ -20,21 +20,15 @@ class MasterStudentTESTs: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testCtor() {
         let student:Student = Student(fN:"Yan",lN:"Jhonas",id:"1234",pN:"4321")
         let master = MasterStudent(st1: student, msc: "computer", thesa: "mobile")
-        print("should be YAN,Jhonas,1234,4321,computer,mobile ")
+        XCTAssert(master.fName == "Yan" && master.lName == "Jhonas" && master.id == "1234" && master.phoneNum == "4321" && master.mscDegree == "computer" && master.thesis == "mobile")
         master.printInfo()
         
         let master2 = MasterStudent(copySt: master)
-        print("should be YAN,Jhonas,1234,4321,computer,mobile ")
+        XCTAssert(master2.fName == "Yan" && master2.lName == "Jhonas" && master2.id == "1234" && master2.phoneNum == "4321" && master2.mscDegree == "computer" && master2.thesis == "mobile")
         master2.printInfo()
-        
-        let master3 = MasterStudent(fN1: "one", lN1: "two", id1: "three", pN1: "four", mscDegree: "five", thesis: "six")
-        print("should be one,two,three,four,five,six")
-        master3.printInfo()
-        
-        XCTAssert(true)
     }
     
     func testPerformanceExample() {
