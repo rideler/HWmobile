@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="91P-f3-K2w">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="first">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJK-rF-U4c">
+                                <rect key="frame" x="0.0" y="179" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="enter name"/>
+                                <connections>
+                                    <segue destination="fej-qq-6VL" kind="show" id="kLh-gL-5N3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrA-An-M8e">
+                                <rect key="frame" x="-17" y="361" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="like ios"/>
+                                <connections>
+                                    <segue destination="Y45-Ac-7Qp" kind="show" id="084-hC-hJE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91094839167860986" green="1" blue="0.21499846502961706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" prompt="First Screen" id="RYt-w5-4tv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
+        </scene>
+        <!--Sec View Controller-->
+        <scene sceneID="D6S-8Y-q1i">
+            <objects>
+                <viewController id="fej-qq-6VL" customClass="SecViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lma-xd-Orf"/>
+                        <viewControllerLayoutGuide type="bottom" id="FIr-Nd-7r2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MGy-Uf-9BO" userLabel="sec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.19709892075437041" green="1" blue="0.29966111817760832" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" prompt="Seconed Screen" id="l3v-EG-A0J" userLabel="second screen">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3G7-g7-5Jh"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="4AW-aS-oTV">
+                            <connections>
+                                <segue destination="Y45-Ac-7Qp" kind="show" id="zDv-Tm-J2j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7U-0y-VGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-287"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dnn-Tx-W5v">
+            <objects>
+                <navigationController id="91P-f3-K2w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MJY-9h-CpD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Utb-DE-MZO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O4U-tQ-kF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-996" y="123"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="C1j-QU-JGE">
+            <objects>
+                <viewController id="Y45-Ac-7Qp" customClass="ThirdViewController" customModule="Task2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xgz-d3-78B"/>
+                        <viewControllerLayoutGuide type="bottom" id="fzh-LK-eAJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vdJ-lG-dZh" userLabel="Third">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.14421002996206655" blue="0.18397560023012038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" prompt="Third Screen" id="llO-Uf-msl" userLabel="third screen">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2Jh-YE-ztu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z71-JW-EjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="152"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zDv-Tm-J2j"/>
+    </inferredMetricsTieBreakers>
+</document>
