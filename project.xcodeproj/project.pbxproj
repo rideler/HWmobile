@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2ACAE61DEF393A00BE5966 /* Task2 in Resources */ = {isa = PBXBuildFile; fileRef = 3B2ACAE51DEF393A00BE5966 /* Task2 */; };
 		3B497AFF1DDDDCEA00F9395B /* MasterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */; };
 		3B497B001DDDDCEA00F9395B /* MasterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */; };
 		3B497B011DDDDCEA00F9395B /* MasterStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B2ACAE51DEF393A00BE5966 /* Task2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Task2; path = ../Task2; sourceTree = "<group>"; };
 		3B497AFE1DDDDCEA00F9395B /* MasterStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterStudent.swift; sourceTree = "<group>"; };
 		3B497B021DDDDF0F00F9395B /* PhdStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhdStudent.swift; sourceTree = "<group>"; };
 		3B497B061DDDEDDE00F9395B /* PhdStudentTESTs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhdStudentTESTs.swift; sourceTree = "<group>"; };
@@ -98,13 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E0B5F7AB1DD8626500635CFA = {
+		3B2ACAE31DEF38FC00BE5966 /* Task1 */ = {
 			isa = PBXGroup;
 			children = (
 				E0B5F7B61DD8626500635CFA /* project */,
 				E0B5F7CB1DD8626500635CFA /* projectTests */,
 				E0B5F7D61DD8626500635CFA /* projectUITests */,
 				E0B5F7B51DD8626500635CFA /* Products */,
+			);
+			name = Task1;
+			sourceTree = "<group>";
+		};
+		E0B5F7AB1DD8626500635CFA = {
+			isa = PBXGroup;
+			children = (
+				3B2ACAE51DEF393A00BE5966 /* Task2 */,
+				3B2ACAE31DEF38FC00BE5966 /* Task1 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -282,6 +293,7 @@
 			files = (
 				E0B5F7C21DD8626500635CFA /* LaunchScreen.storyboard in Resources */,
 				E0B5F7BF1DD8626500635CFA /* Assets.xcassets in Resources */,
+				3B2ACAE61DEF393A00BE5966 /* Task2 in Resources */,
 				E0B5F7BD1DD8626500635CFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
